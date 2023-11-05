@@ -1,0 +1,8 @@
+torch
+torchvision
+tensorboard-logger
+yacs
+wandb
+tqdm
+tensorboardX
+timm

@@ -1,0 +1,136 @@
+{
+    "FP16": false,
+    "T": 4,
+    "batch_size": 64,
+    "ckpt_dir": "output/cifar/resnet8x4-resnet32x4-1/ckpt",
+    "config": "experiments/cifar/resnet8x4-resnet32x4.yaml",
+    "data_dir": "../../data",
+    "epochs": 240,
+    "extra_paths": 2,
+    "extra_type": "bi",
+    "gamma": 0.1,
+    "init_lr": 0.05,
+    "is_train": true,
+    "logs_dir": "output/cifar/resnet8x4-resnet32x4-1/log",
+    "loss_mixture": {
+        "kl_student": [
+            {
+                "x": [
+                    0
+                ],
+                "y": [
+                    1
+                ]
+            },
+            {
+                "x": [
+                    0
+                ],
+                "y": [
+                    0
+                ]
+            },
+            {
+                "x": [
+                    0
+                ],
+                "y": [
+                    0
+                ]
+            }
+        ],
+        "label": {
+            "x": [
+                0
+            ],
+            "y": [
+                0
+            ]
+        }
+    },
+    "loss_student": {
+        "kl_student": [
+            {
+                "x": [
+                    0
+                ],
+                "y": [
+                    1
+                ]
+            },
+            {
+                "x": [
+                    0
+                ],
+                "y": [
+                    0
+                ]
+            },
+            {
+                "x": [
+                    0
+                ],
+                "y": [
+                    0
+                ]
+            }
+        ],
+        "label": {
+            "x": [
+                0
+            ],
+            "y": [
+                1.0
+            ]
+        }
+    },
+    "loss_teacher": {
+        "kl_student": [
+            {
+                "x": [
+                    0
+                ],
+                "y": [
+                    0
+                ]
+            },
+            {
+                "x": [
+                    0
+                ],
+                "y": [
+                    0
+                ]
+            },
+            {
+                "x": [
+                    0
+                ],
+                "y": [
+                    0
+                ]
+            }
+        ],
+        "label": {
+            "x": [
+                0
+            ],
+            "y": [
+                0
+            ]
+        }
+    },
+    "momentum": 0.9,
+    "nesterov": true,
+    "num_classes": 100,
+    "output_dir": "output/cifar/resnet8x4-resnet32x4-1",
+    "random_seed": 1,
+    "resume": null,
+    "save_name": "model",
+    "scheduler": "step",
+    "student": "resnet8x4",
+    "teacher": "resnet32x4",
+    "teacher_ckpt": "../../download_ckpts/cifar_teachers/resnet32x4_vanilla/ckpt_epoch_240.pth",
+    "weight_decay": 0.0005,
+    "weight_l2": 5
+}
