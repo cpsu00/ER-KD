@@ -1,0 +1,17 @@
+setuptools
+tensorboardX
+thop
+torch
+torchsummary
+torchvision
+tqdm
+wandb
+yacs
+fvcore
+imgaug
+numpy
+Pillow
+PyYAML
+easydict
+scipy==1.10.1
+timm==0.6.7

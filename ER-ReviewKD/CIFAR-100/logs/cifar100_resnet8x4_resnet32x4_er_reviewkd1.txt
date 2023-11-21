@@ -1,0 +1,41 @@
+dataset: cifar100
+model: resnet8x4
+batch_size: 128
+epochs: 240
+lr: 0.1
+gamma: 0.1
+lr_adjust_step: [150, 180, 210]
+wd: 0.0005
+seed: 322
+suffix: er_reviewkd1
+test: False
+resume: 
+teacher: resnet32x4
+teacher_weight: ../../download_ckpts/cifar_teachers/resnet32x4_vanilla/ckpt_epoch_240.pth
+kd_loss_weight: 5.0
+kd_warm_up: 20.0
+use_kl: False
+kl_loss_weight: 1.0
+T: 4.0
+ce_loss_weight: 1.0
+dataset: cifar100
+model: resnet8x4
+batch_size: 128
+epochs: 240
+lr: 0.1
+gamma: 0.1
+lr_adjust_step: [150, 180, 210]
+wd: 0.0005
+seed: 20
+suffix: er_reviewkd1
+test: False
+resume: 
+teacher: resnet32x4
+teacher_weight: ../../download_ckpts/cifar_teachers/resnet32x4_vanilla/ckpt_epoch_240.pth
+kd_loss_weight: 5.0
+kd_warm_up: 20.0
+use_kl: False
+kl_loss_weight: 1.0
+T: 4.0
+ce_loss_weight: 1.0
+epoch: 0  train_acc: 12.64  test_acc: 17.93  best_acc: 17.93  lr: 0.10000  loss: 3.51685  review_kd_loss: 0.00000  cls_loss: 3.51685  time: 12s453ms  eta: 49m36s  

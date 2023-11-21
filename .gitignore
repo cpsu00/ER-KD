@@ -1,0 +1,7 @@
+*.pyc
+.DS_Store
+data/
+download_ckpts/
+__pycache__/
+wandb/
+mdistiller/mdistiller.egg-info/
